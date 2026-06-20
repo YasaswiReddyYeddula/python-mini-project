@@ -3,7 +3,7 @@ import plotly.express as px
 df = px.data.iris()
 print(df)
 
-#PART 1: Dataset Exploration 
+#PART 1: Dataset Exploration -------------------------------------------------
 #Task 1 
 #Display first 5 records. 
 print(df.head())
@@ -30,7 +30,7 @@ print(df.dtypes)
 
 
 
-#PART 2: Data Analysis  
+#PART 2: Data Analysis ---------------------------------------------------------
 
 #Task 1 
 #Find average sepal length. 
@@ -66,7 +66,7 @@ species_count = df["species"].value_counts()
 print(species_count)
 
 
-#PART 3: NumPy Practice
+#PART 3: NumPy Practice-----------------------------------------------------------------------
 #Convert the following columns into NumPy arrays. 
 df["sepal_length"] 
 df["petal_length"] 
@@ -120,7 +120,7 @@ pl_std = df["petal_length"].std()
 print(pl_std)
 
 
-#PART 4: Visualization using Matplotlib
+#PART 4: Visualization using Matplotlib--------------------------------------------------------------------
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
@@ -178,9 +178,10 @@ plt.savefig(Histogram_chart_Path, bbox_inches = 'tight')
 plt.show()
 plt.close()
 
+print("Histogram is saved at:", Histogram_chart_Path)
 
 
-#PART 5: Visualization using Plotly
+#PART 5: Visualization using Plotly----------------------------------------------------------------------------
 import plotly.express as px
 
 #Chart 1 : Interactive Scatter Plot 
@@ -227,7 +228,7 @@ pie_chart.show()
 
 
 
-#PART 6: Python Fundamentals 
+#PART 6: Python Fundamentals --------------------------------------------------------------------------
 #Create a Python list: 
 marks = [78, 82, 91, 65, 88] 
 
