@@ -257,3 +257,17 @@ print(highest_mark)
 lowest_mark = min(marks)
 print(lowest_mark)
 
+
+
+#BONUS CHALLENGE--------------------------------------------------------------------------
+'''Create a dashboard summary showing: 
+• Total Records 
+• Number of Species 
+• Average Sepal Length 
+• Average Petal Length '''
+
+print("Iris Dataset Analysis Report")
+print("Total Records :", len(df))
+print("Species Count :", df["species"].nunique())
+print("Average Aepal Length :", df["sepal_length"].mean())
+print("Average Petal Length :", df["petal_length"].mean())
